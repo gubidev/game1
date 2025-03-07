@@ -12,11 +12,11 @@ class game extends Phaser.Scene {
 
     preload() {
         // Carrega as imagens e sprites necessárias para o jogo
-        this.load.image('sky', 'game1/assets/sky.png'); // Corrected path
-        this.load.image('ground', 'game1/assets/platform.png'); // Corrected path
-        this.load.image('bomb', 'game1/assets/bomb.png'); // Corrected path
-        this.load.image('princess', 'game1/assets/princess.png'); // Corrected path
-        this.load.spritesheet('dude', 'game1/assets/dude.png', { frameWidth: 32, frameHeight: 48 }); // Corrected path
+        this.load.image('sky', 'assets/sky.png'); // Corrected path
+        this.load.image('ground', 'assets/platform.png'); // Corrected path
+        this.load.image('bomb', 'assets/bomb.png'); // Corrected path
+        this.load.image('princess', 'assets/princess.png'); // Corrected path
+        this.load.spritesheet('dude', 'assets/dude.png', { frameWidth: 32, frameHeight: 48 }); // Corrected path
     }
 
     create() {
