@@ -18,11 +18,11 @@ class plataforma extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('sky', 'assets/sky.png');
-        this.load.image('ground', 'assets/platform.png');
-        this.load.image('star', 'assets/star.png');
-        this.load.image('bomb', 'assets/bomb.png');
-        this.load.spritesheet('dude', 'assets/dude.png', { frameWidth: 32, frameHeight: 48 });
+        this.load.image('sky', 'game1/assets/sky.png');
+        this.load.image('ground', 'game1/assets/platform.png');
+        this.load.image('star', 'game1/assets/star.png');
+        this.load.image('bomb', 'game1/assets/bomb.png');
+        this.load.spritesheet('dude', 'game1/assets/dude.png', { frameWidth: 32, frameHeight: 48 });
     }
 
     create() {
