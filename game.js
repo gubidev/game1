@@ -12,11 +12,11 @@ class game extends Phaser.Scene {
 
     preload() {
         // Carrega as imagens e sprites necessárias para o jogo
-        this.load.image('sky', '../assets/sky.png');
-        this.load.image('ground', '../assets/platform.png');
-        this.load.image('bomb', '../assets/bomb.png');
-        this.load.image('princess', '../assets/princess.png');
-        this.load.spritesheet('dude', '../assets/dude.png', { frameWidth: 32, frameHeight: 48 });
+        this.load.image('sky', 'assets/sky.png'); // Corrected path
+        this.load.image('ground', 'assets/platform.png'); // Corrected path
+        this.load.image('bomb', 'assets/bomb.png'); // Corrected path
+        this.load.image('princess', 'assets/princess.png'); // Corrected path
+        this.load.spritesheet('dude', 'assets/dude.png', { frameWidth: 32, frameHeight: 48 }); // Corrected path
     }
 
     create() {
@@ -159,7 +159,7 @@ class game extends Phaser.Scene {
         button.addEventListener('click', () => {
             document.body.removeChild(button);
             this.scene.stop('game'); // Encerra a cena atual
-            this.scene.start('plataforma'); // Inicia a cena 'plataforma'
+            this.scene.start('game'); // Inicia a cena 'game' (or change to an existing scene)
         });
     }
 }
